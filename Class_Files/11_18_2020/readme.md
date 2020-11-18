@@ -14,3 +14,7 @@
 ##### 4, setup Database by clicking Create/Reset Database
 
 ![alt text](https://github.com/LunarstarPony/iPAS/blob/main/Class_Files/11_18_2020/3.png?raw=true)
+
+##### 5, Success! 
+
+![alt text](https://github.com/LunarstarPony/iPAS/blob/main/Class_Files/11_18_2020/4.png?raw=true)
