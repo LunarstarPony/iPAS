@@ -18,3 +18,28 @@
 ##### 5, Success! 
 
 ![alt text](https://github.com/LunarstarPony/iPAS/blob/main/Class_Files/11_18_2020/4.png?raw=true)
+
+##### Source Code
+```
+<?php
+
+if( isset( $_POST[ 'Submit' ]  ) ) {
+    // Get input
+    $target = $_REQUEST[ 'ip' ];
+
+    // Determine OS and execute the ping command.
+    if( stristr( php_uname( 's' ), 'Windows NT' ) ) {
+        // Windows
+        $cmd = shell_exec( 'ping  ' . $target );
+    }
+    else {
+        // *nix
+        $cmd = shell_exec( 'ping  -c 4 ' . $target );
+    }
+
+    // Feedback for the end user
+    echo "<pre>{$cmd}</pre>";
+}
+
+?>
+```
