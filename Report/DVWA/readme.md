@@ -119,7 +119,7 @@ Thanks for using MariaDB!
 #### 5, Refresh Database 
     FLUSH PRIVILEGES;
 
-#### 6,COnfig DVWA Database settings accorting to your previous settings
+#### 6,Config DVWA Database settings accorting to your previous settings
     sudo vi config/config.inc.php
 	
 ##### Settings
