@@ -2,21 +2,21 @@
 
 ### Install Neccessary
 
-#### Install and enable Neccessary Repo using
+#### 1, Install and enable Neccessary Repo
     sudo yum install yum-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm -y
     sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 	
-#### Set default php version to PHP 7.4
+#### 2, Set default php version to PHP 7.4
     sudo yum module enable php:remi-7.4
 	
-#### Install all neccessary software 
+#### 3, Install all neccessary software 
     sudo yum install php-fpm php-common php-cli php-mysqli php-gd nginx mariadb-server wget unzip -y
 	
-#### Enable and start the software
+#### 4, Enable and start the software
 
     sudo systemctl enable mariadb nginx php-fpm.service --now
 	
-### Open 80 and 433 Port aand reload firewall
+#### 5, Open 80 and 433 Port aand reload firewall
 
     sudo firewall-cmd --zone=public --add-port=433/tcp --add-port=80/tcp --permanent
 	sudo firewall-cmd --reload
